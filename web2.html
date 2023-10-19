@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web2.css">
+    <link rel="stylesheet" href="reset.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/183b694fdd.js" crossorigin="anonymous"></script>
+    <!--폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+    <!--제이쿼리-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(window).scroll(function(){
+          var scrollTop = $(window).scrollTop();
+          if(scrollTop != 0) $('header').addClass('scroll');
+          else $('header').removeClass('scroll');
+      });
+
+      $(function(){
+            $('.menui').click(function(){
+                $('.search').fadeIn(500),
+                $('.menui').css('display', 'none')
+                $('.xx').css('display', 'block')
+            })
+
+            $('.xx').click(function(){
+                $('.search').fadeOut(500),
+                $('.xx').css('display', 'none')
+                $('.menui').css('display', 'block')
+            })
+          })
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <nav>
+                <div class="logomenu">
+                    <div class="logomenu1">
+                    <h1><a href="web2.html">dasique</a></h1>
+                    </div>
+                    <div class="logomenu2">
+                    <ul>
+                        <li><a href="web2_aboutus.html">ABOUT US</a></li>
+                        <li><a href="">SHOP ALL</a></li>
+                        <li><a href="">COLLECTION</a></li>
+                        <li><a href="">BOARD</a></li>
+                        <li><a href="">REVIEW</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="login">
+                  <!-- <label for="login_search"></label>
+                  <input type="text" name="" id="login_search">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button> -->
+                    <i class="fa-solid fa-bars menui"></i>
+                </div>
+            </nav>
+            <div class="search">
+              <i class="fa-solid fa-x xx"></i>
+              <div class="search1">
+                <ul class="search1_list">
+                  <li><a href="web2_aboutus.html">BRAND</a>
+                    <ul class="search1_list_sub">
+                      <li><a href="">About dasique</a></li>
+                      <li><a href="">뷰티즌</a></li>
+                      <li><a href="">지구를 위한 활동</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">PRODUCT</a>
+                    <ul class="search1_list_sub">
+                      <li><a href="">신제품 모아보기</a></li>
+                      <li><a href="" class="search1_list_sub_menu">카테고리</a>
+                        <ul class="search1_list_sub_sub">
+                          <li><a href="">Eyes</a></li>
+                          <li><a href="">Lip</a></li>
+                          <li><a href="">Face</a></li>
+                          <li><a href="">Nail</a></li>
+                          <li><a href="">Body</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="">MAKEUP LOOK</a></li>
+                  <li><a href="">FOUNDATION FACTORY</a></li>
+                  <li><a href="">@dasique_official</a>
+                    <ul class="search1_list_sub">
+                      <li><a href="">Instagram</a></li>
+                      <li><a href="">Youtube</a></li>
+                      <li><a href="">FaceBook</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">STORE</a></li>
+                  <li><a href="">CONTACT</a>
+                    <ul class="search1_list_sub">
+                      <li><a href="">공지사항</a></li>
+                      <li><a href="">FAQ</a></li>
+                      <li><a href="">고객문의</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">MEMBERSHIP</a></li>
+                </ul>
+              </div>
+              <!-- <div class="search2">sfsf</div> -->
+            </div>
+        </header>
+        <main>
+            <section id="section1">
+                <div class="swiper mySwiper sec1">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide sec1_2">
+                        <a href=""><img src="img/dasique1.jpeg"></a>
+                      </div>
+                      <div class="swiper-slide sec1_2">
+                        <a href=""><img src="img/dasique2.jpeg"></a>
+                      </div>
+                      <div class="swiper-slide sec1_2">
+                        <a href=""><img src="img/dasique3.jpeg"></a>
+                      </div>
+                      <div class="swiper-slide sec1_2">
+                        <a href=""><img src="img/dasique4_2.jpeg"></a>
+                      </div>
+                      <div class="swiper-slide sec1_2">
+                        <a href=""><img src="img/dasique5.jpeg"></a>
+                      </div>
+                      <div class="swiper-slide sec1_2">
+                        <a href=""><img src="img/dasique6.jpeg"></a>
+                      </div>
+                      <div class="swiper-slide sec1_2">
+                        <a href=""><img src="img/dasique7.jpeg"></a>
+                      </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                  </div>
+            </section>
+            <section id="section2">
+                <div class="swiper mySwiper sec2">
+                    <h1>BEST ITEM</h1>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide sec2_2">
+                        <ul>
+                            <li><a href=""><img src="img/dasique8.jpg"></a></li>
+                            <li><a href="">[1+1] 무드 슬림 라이너<br>13,000원</a></li>
+                        </ul>
+                      </div>
+                      <div class="swiper-slide sec2_2">
+                        <ul>
+                            <li><a href=""><img src="img/dasique9.jpg"></a></li>
+                            <li><a href="">섀도우 팔레트 (아이스크림 컬렉션)<br>27,200원</a></li>
+                        </ul>
+                      </div>
+                      <div class="swiper-slide sec2_2">
+                        <ul>
+                            <li><a href=""><img src="img/dasique10.jpg"></a></li>
+                            <li><a href="">섀도우 팔레트 23 썸머코랄<br>27,200원</a></li>
+                        </ul>
+                      </div>
+                      <div class="swiper-slide sec2_2">
+                        <ul>
+                            <li><a href=""><img src="img/dasique11.jpg"></a></li>
+                            <li><a href="">[릴레이 할인] 리퀴드 펜 아이라이너<br>6,000원</a></li>
+                        </ul>
+                      </div>
+                      <div class="swiper-slide sec2_2">
+                        <ul>
+                            <li><a href=""><img src="img/dasique12.jpg"></a></li>
+                            <li><a href="">블렌딩 레이어 치크 01 썸머 코랄<br>19,200원</a></li>
+                        </ul>
+                      </div>
+                      <div class="swiper-slide sec2_2">
+                        <ul>
+                            <li><a href=""><img src="img/dasique13.jpg"></a></li>
+                            <li><a href="">쥬시 듀이 틴트 (썸머 코랄 컬렉션)<br>11,900원</a></li>
+                        </ul>
+                      </div>
+                      <div class="swiper-slide sec2_2">
+                        <ul>
+                            <li><a href=""><img src="img/dasique14.jpg"></a></li>
+                            <li><a href="">[단품] 무드 블러 립펜슬 (+ 미니 립펜슬 증정)<br>10,900원</a></li>
+                        </ul>
+                      </div>
+                      <div class="swiper-slide sec2_2">
+                        <ul>
+                            <li><a href=""><img src="img/dasique15.jpg"></a></li>
+                            <li><a href="">스탈릿 쥬얼 리퀴드 글리터<br>10,500원</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                  </div>
+            </section>
+            <section id="section3">
+              <div id="section3_text">
+                <i class="fa-solid fa-paintbrush"></i>
+                <h1>Makeup Look</h1>
+                <p>지금 나에게 어울리는 메이크업 룩은?</p>
+                <button>View More</button>
+              </div>
+            </section>
+            <section id="section4">
+                <div id="section4_img">
+                    <img src="img/dasique17_1.jpg" alt="">
+                    <div id="section4_icon">
+                        <ul>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="section4_event">
+                    <div id="section4_text">
+                        <i class="fa-regular fa-lightbulb"></i>
+                        <h1>News & Event</h1>
+                        <button>View More</button>
+                      </div>
+                      <div class="swiper mySwiper sec4">
+                        <div class="swiper-wrapper sec4_1">
+                          <div class="swiper-slide sec4_2">
+                            <a href=""><img src="img/dasique20.jpg" alt="">
+                            <p>맞춤형 파운데이션 서비스</p></a>
+                          </div>
+                          <div class="swiper-slide sec4_2">
+                            <a href=""><img src="img/dasique21.jpg" alt="">
+                            <p>어바웃 데이지크</p></a>
+                          </div>
+                          <div class="swiper-slide sec4_2">
+                            <a href=""><img src="img/dasique19.jpg" alt="">
+                            <p>공병수거 캠페인</p></a>
+                          </div>
+                          <div class="swiper-slide sec4_2">
+                            <a href=""><img src="img/dasique18.jpg" alt="">
+                            <p>모두를 위한 비건 라이프</p></a>
+                          </div>
+                        </div>
+                        <div class="swiper-button-next" style="color: #5e2e2e;"></div>
+                        <div class="swiper-button-prev" style="color: #5e2e2e;"></div>
+                      </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div id="footer_wrap">
+            <div id="footer1">
+                <a href=""><h1>dasique</h1></a>
+                <br>
+                <h1>02-6959-3877</h1>
+                <p>OPENING HOURS. AM10-PM5</p>
+                <p>LUNCH BREAK. PM12:30-PM1:30</p>
+                <p>SAT, SUN OFF</p>
+                <br>
+                <p>기업은행 588-036269-04-017</p>
+                <p>예금주 : 주식회사 데이지크</p>
+            </div>
+            <div id="footer2">
+                <p><span>COMPANY</span> (주) 데이지크</p>
+                <p><span>OWNER & ADMIN</span> 연정미, 이경재</p>
+                <p><span>BUSINESS NO.</span> 769-86-01723</p>
+                <p><span>ONLINE-ORDER NO.</span> 2020-서울강남-02057</p>
+                <p><span>ADDRESS</span> 서울특별시 강남구 테헤란로 513, 4층(삼성동, K타워)</p>
+                <p><span>TEL</span> 02-6959-3877</p>
+                <p><span>DOMESTIC SALES</span> md@byecom.co.kr</p>
+                <p><span>OVERSEAS SALES</span> (주) 데이지크</p>
+                <p><span>COMPANY</span> juhee.seo@byecom.co.kr</p>
+                <p><span>MARKETING</span> marketing@byecom.co.kr</p>
+            </div>
+            <div id="footer3">
+                <ul>
+                    <li><a href="">COMPANY</a></li>
+                    <li><a href="">AGREEMENT</a></li>
+                    <li><a href="">PRIVACY POLICY</a></li>
+                    <li><a href="">GUIDE</a></li>
+                    <li><a href="">BUSINESS LICENSE</a></li>
+                </ul>
+            </div>
+            <div id="footer4">
+                <p>FOLLOW US</p>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        </footer>
+    </div>
+
+    <script>
+        var swiper = new Swiper(".sec1", {
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        // hide: true,
+        loop: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".sec2", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      freeMode: true,
+      loop: true,
+    //   navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    //   },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".sec4", {
+      slidesPerView: 2,
+      spaceBetween: -70,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    </script>
+</body>
+</html>
