@@ -25,6 +25,7 @@ header nav{
     display: flex;
     height: 30px;
     line-height: 30px;
+    position: relative;
 }
 header nav #nav_logo{
     font-size: 30px;
@@ -59,6 +60,34 @@ header nav #nav_login ul li{
 header nav #nav_login ul li:hover{
     text-decoration: underline;
 }
+header nav .navbar{
+    font-size: 23px;
+    display: none;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.nav_on{
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: none;
+} 
+.nav_on .nav_list2{
+    /* width: 53%; */
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    padding: 25% 0;
+}
+.nav_on .nav_list2 ul li:hover{
+    text-decoration: underline;
+}
+.nav_on .xx{float: right; font-size: 3em; }
 
 
 main #section1 .sec1{
@@ -88,12 +117,12 @@ main #section1 .sec1 .sec1_btn:hover{
     border-radius: 20px;
     transition: 1s;
 }
-main #section1 .sec1 .sec1_2 div{
+/* main #section1 .sec1 .sec1_2 div{
     width: 40vw; 
     padding: 7% 3%;
-}
+} */
 main #section1 .sec1 .sec1_2 div h1{
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     font-weight: bold;
 }
@@ -122,17 +151,17 @@ main #section1 .sec1 .sec1_2 div button:hover{
 }
 main #section1 .sec1 .sec1_2 #sec1_slidertext1{
     background: #164d13;
-    padding: 8% 3%;
+    /* padding: 8% 3%; */
 }
 main #section1 .sec1 .sec1_2 #sec1_slidertext2{
     background: #445767;
     text-align: right;
-    padding: 11% 3.5%;
+    /* padding: 11% 3.5%; */
 }
 main #section1 .sec1 .sec1_2 #sec1_slidertext3{background: #1c4f6e;}
 main #section1 .sec1 .sec1_2 #sec1_slidertext4{
     background: #767f3a;
-    padding: 7% 3%;
+    /* padding: 7% 3%; */
     text-align: right;
 }
 main #section1 #sec1_text{
@@ -146,8 +175,9 @@ main #section1 #sec1_text{
 }
 main #section1 #sec1_text h1{
     font-size: 30px;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-bottom: 20px;
+    font-family: 'Nanum Pen Script', cursive;
 }
 /* main #section1 #sec1_text hr{
     width: 300px;
@@ -156,6 +186,17 @@ main #section1 #sec1_text p{
     color: gray;
     margin: 20px 0;
 }
+/* main #section1 .sec1 .sec1_2 .sec1_slidertext{
+    position: relative;
+} */
+main #section1 .sec1 .sec1_2 .sec1_slidertext .sec1_textbox{
+    /* position: absolute;
+    top: 50%;*/
+    /* margin: 25% 0; */
+    width: 75%;
+    margin: 0 auto;
+    padding: 25% 0;
+} 
 
 
 main #section2{
@@ -203,20 +244,20 @@ main #section2 #sec2_list .sec2_list_img img{
 }
 main #section2 #sec2_list .sec2_list_img p{
     position: absolute;
-    bottom: 80px; left: 90px;
+    bottom: 20%; left: 40%;
     font-size: 35px;
     color: white;
     font-weight: bold;
 }
 main #section2 #sec2_list .sec2_list_img .plastic{
     position: absolute;
-    bottom: 80px; left: 60px;
+    bottom: 20%; left: 30%;
 }
 main #section2 #sec2_list .sec2_list_img span{
     font-size: 20px;
     color: white;
     letter-spacing: 0.8rem;
-    line-height: 2;
+    line-height: 1.8;
 }
 main #section2 #sec2_list .img1{
     background: #008fe2;
@@ -249,7 +290,6 @@ main #section3 #sec3_container{
 }
 main #section3 #sec3_container #sec3_box1{
     width: 33.33%;
-    /* background: pink; */
     text-align: center;
     padding-top: 3%;
 }
@@ -288,18 +328,25 @@ main #section3 #sec3_container #sec3_box2 img{
 }
 main #section3 #sec3_container #sec3_box2:hover img{
     box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.5);
-    transition: 1s;
+    transition: 0.5s;
+}
+main #section3 #sec3_container #sec3_box2:hover h1{
+    color: #61c003; transition: 0.5s;
 }
 main #section3 #sec3_container #sec3_box3{
     width: 33.33%;
     /* padding: 2%; */
     margin-top: 4%;
+    /* padding-bottom: 3%; */
     /* background: green; */
 }
 main #section3 #sec3_container #sec3_box3 .sec_box3_text{
     width: 60%;
-    line-height: 2;
-    padding-top: 10px;
+    /* line-height: 2;
+    padding-top: 10px; */
+}
+main #section3 #sec3_container #sec3_box3 .sec_box3_text .sec_box3_text_box{
+    margin: 8% 0;
 }
 main #section3 #sec3_container #sec3_box3 .sec_box3_text h1{
     font-size: 17px;
@@ -318,7 +365,7 @@ main #section3 #sec3_container #sec3_box3 .sec_box3_img{
 }
 main #section3 #sec3_container #sec3_box3 img{
     width: 90%;
-    height: 70%;
+    height: 90%;
     border-radius: 20px;
 }
 main #section3 #sec3_container #sec3_box3 .sec_box3_1{
@@ -326,9 +373,16 @@ main #section3 #sec3_container #sec3_box3 .sec_box3_1{
     height: 33.333%;
     cursor: pointer;
 }
+/* main #section3 #sec3_container #sec3_box3 #sec_box3_2{
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+} */
 main #section3 #sec3_container #sec3_box3 .sec_box3_1:hover img{
     box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.5);
-    transition: 1s;
+    transition: 0.5s;
+}
+main #section3 #sec3_container #sec3_box3 .sec_box3_1:hover h1{
+    color: #61c003; transition: 0.5s;
 }
 /* main #section3 #sec3_container #sec3_box3 #sec_box3_2{
     border-bottom: 2px solid gray;
@@ -340,13 +394,13 @@ main #section4{
     /* background: url(img/greenpeace22.jpg) no-repeat;
     background-size: cover; */
     width: 100%;
-    height: 62vh;
+    /* height: 62vh; */
     background: #f9f6ed;
 }
 main #section4 #sec4_box1{
     width: 80%;
     margin: 0 auto;
-    height: 25vh;
+    /* height: 25vh; */
     /* background: pink; */
     text-align: center;
     padding-top: 30px;
@@ -363,6 +417,7 @@ main #section4 #sec4_box1 #sec4_box1_text{
 }
 main #section4 #sec4_box1 #sec4_box1_text h1{
     font-size: 30px;
+    font-family: 'Nanum Pen Script', cursive;
     /* font-family: 'Nanum Pen Script', cursive;
     color: #61c003;*/
 } 
@@ -372,14 +427,14 @@ main #section4 #sec4_box1 #sec4_box1_text p{
 main #section4 #sec4_box2{
     width: 80%;
     margin: 0 auto;
-    height: 30vh;
+    /* height: 30vh; */
     display: flex;
 }
 main #section4 #sec4_box2 div{
     width: 25%;
     text-align: center;
     border-radius: 20px;
-    background: skyblue;
+    background: #d6eaa477;
     padding: 50px;
     margin: 20px;
 }
@@ -389,17 +444,18 @@ main #section4 #sec4_box2 div img{
 }
 main #section4 #sec4_box2 div h1{
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 800;
     padding: 5px;
+    font-family: 'Nanum Pen Script', cursive;
 }
 main #section4 #sec4_box2 div p{
     color: gray;
     font-weight: bold;
 }
-main #section4 #sec4_box2 #sec4_box2_1{background: #cdeef3;}
+/* main #section4 #sec4_box2 #sec4_box2_1{background: #cdeef3;}
 main #section4 #sec4_box2 #sec4_box2_2{background: #daf1dd;}
-main #section4 #sec4_box2 #sec4_box2_3{background: #d6eaa4;}
-main #section4 #sec4_box2 #sec4_box2_4{background: #ffe0de;}
+main #section4 #sec4_box2 #sec4_box2_3{background: #d6eaa477;}
+main #section4 #sec4_box2 #sec4_box2_4{background: #ffe0de;} */
 
 
 /* main #section5{
@@ -487,4 +543,38 @@ footer #footer_box2 #footer_box2_container #footer_box2_2{
 footer #footer_box2 #footer_box2_container #footer_box2_2 ul li:hover{
     color: white;
     transition: 1s;
+}
+
+
+@media screen and (max-width:940px){
+    header nav .navbar{display: block;}
+    header nav #nav_list{display: none;}
+    header nav #nav_login{display: none;}
+    main #section1 .sec1 .sec1_2 .sec1_imgbox img{width: 100%;}
+    main #section1 .sec1 .sec1_2 .sec1_textbox{display: none;}
+    main #section1 #sec1_text{width: 80%;}
+    main #section3 #sec3_container{display: block;}
+    main #section3 #sec3_container #sec3_box1{width: 100%;}
+    main #section3 #sec3_container #sec3_box2{width: 100%;}
+    main #section3 #sec3_container #sec3_box3{width: 100%;}
+    main #section2 #sec2_list{display: grid; grid-template-columns: repeat(2, 1fr);}
+    main #section2 #sec2_list .sec2_list_img{width: 90%; margin: 10px auto;}
+    main #section4 #sec4_container #sec4_box1 #sec4_box1_text{width: 100%;}
+    main #section4 #sec4_box2{display: grid; grid-template-columns: repeat(2, 1fr);}
+    main #section4 #sec4_box2 div {width: 50%; margin: 10px auto;}
+    footer #footer_box1 #footer_box1_1 h1{font-size: 25px;}
+    footer #footer_box1 #footer_box1_1 p{font-size: 10px;}
+    footer #footer_box1 h1 {font-size: 15px;}
+    footer #footer_box1 li {font-size: 12px;}
+    footer #footer_box1 #footer_box1_4 i{font-size: 13.3px;}
+    /* .nav_on{display: block;} */
+}
+
+@media screen and (max-width:540px){
+    main #section2 #sec2_list{display: block;}
+    main #section3 #sec3_container #sec3_box3{padding-bottom: 5%;}
+    main #section3 #sec3_container #sec3_box3 .sec_box3_text h1{font-size: 13px;}
+    main #section4 #sec4_box2{display: block;}
+    main #section4 #sec4_box2 div{width: 60%}
+    /* .nav_on .nav_list2{padding: 50% 0;} */
 }

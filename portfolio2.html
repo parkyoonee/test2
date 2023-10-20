@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--제이쿼리-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="portfolio2.css">
+    <script>
+        $(window).scroll(function(){
+          var scrollTop = $(window).scrollTop();
+          if(scrollTop != 0) $('header').addClass('nav_scroll');
+          else $('header').removeClass('nav_scroll');
+      });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#section2">ABOUT</a></li>
+                    <li><a href="#section3">PROJECT</a></li>
+                    <li><a href="##section4">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="section1">
+                <div id="sec1_container">
+                    <div id="sec1_box1">
+                        <span class="line"></span>
+                        <p>WEB PUBLISHER</p>
+                        <h1>Portfolio</h1><br>
+                        <a href="#section2"><span class="name">Park YoonHee</span></a>
+                    </div>
+                    <div id="sec1_box2">
+                        <h1>2023</h1>
+                    </div>
+                </div>
+            </section>
+            <section id="section2"></section>
+            <section id="section3">
+                <div class="section_name" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-duration="1500"
+                data-aos-offset="0">
+                    <h1>PROJECT</h1>
+                </div>
+                <div class="project_box1">
+                    <div class="project_box1_left">
+                        <img src="img/목업.png">
+                    </div>
+                    <div class="project_box1_right">
+                        <div class="txt">
+                            <h2>어쩌구 저쩌구①</h2>
+                            <div class="project_box1_right_text">
+                                <table class="project_tb">
+                                    <tr>
+                                        <th>TYPE</th>
+                                        <td><span>어쩌구 사이트</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>PAGE</th>
+                                        <td>Main, Login, <span>상세페이지</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>TOOL</th>
+                                        <td>Photoshop, HTML5, CSS3, Javascript, Jquery, git</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="contri">기여도</th>
+                                        <td><span>디자인</span> 100% <span>퍼블리싱</span> 100%</td>
+                                    </tr>
+                                    <th></th>
+                                    <td>
+                                        <div class="site">
+                                            <a href="#">Main</a>
+                                            <a href="#">Sub1</a>
+                                            <a href="#">Sub1</a>
+                                        </div>  
+                                    </td>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section4"></section>
+        </main>
+        <footer></footer>
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

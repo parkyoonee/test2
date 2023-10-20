@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--제이쿼리-->
+    <script src="js/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="web3.css">
     <!--폰트-->
@@ -18,6 +20,22 @@
     <!--aos-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      $(function(){
+            $('.navbar').click(function(){
+                $('.nav_on').fadeIn(500),
+                // $('.navbar').css('display', 'none')
+                $('.xx').css('display', 'block')
+            })
+
+            $('.xx').click(function(){
+                $('.nav_on').fadeOut(500),
+                $('.xx').css('display', 'none')
+                // $('.navbar').css('display', 'block')
+            })
+          })
+    </script>
 </head>
 <body>
     <div id="wrap">
@@ -43,6 +61,7 @@
                         <li><a href="">Sign up</a></li>
                     </ul>
                 </div>
+                <i class="fas fa-bars navbar"></i>
             </nav>
         </header>
         <main>
@@ -50,50 +69,71 @@
                 <div class="swiper mySwiper sec1">
                     <div class="swiper-wrapper sec1_1">
                       <div class="swiper-slide sec1_2">
-                        <img src="img/greenpeace10.jpg"/>
+                        <div class="sec1_imgbox">
+                            <img src="img/greenpeace10.jpg"/>
+                        </div>
                         <div id="sec1_slidertext1" class="sec1_slidertext">
-                            <h1>그린피스 환경감시선 <br>‘아틱 선라이즈'호가 억류된 이유</h1><br>
-                            <span>우리의 메시지는 분명합니다. 노르웨이, “석유보다 사람을 생각하세요!"</span><br><br>
-                            <p>전 세계 25개국에서 온 35명의 활동가들은 노르웨이 북극의 바렌츠 해(Barents Sea)로 향했습니다<br>
+                            <div class="sec1_textbox">
+                                <h1>그린피스 환경감시선 <br>‘아틱 선라이즈'호가 억류된 이유</h1><br>
+                                <span>우리의 메시지는 분명합니다. 노르웨이, “석유보다 사람을 생각하세요!"</span><br><br>
+                                <p>전 세계 25개국에서 온 35명의 활동가들은 노르웨이 북극의 바렌츠 해(Barents Sea)로 향했습니다<br>
                                 북극 석유 시추를 중단하라는 전 세계 시민들의 목소리를 
                                 노르웨이 정부에 전하기 위해서입니다.</p><br><br>
-                            <button><a href="https://www.greenpeace.org/korea/update/8031/blog-arctic-arctic-sunrise-detain/">MORE VIEW</a></button>
+                                <button><a href="https://www.greenpeace.org/korea/update/8031/blog-arctic-arctic-sunrise-detain/">MORE VIEW</a></button>
+                            </div>
                         </div>
                       </div>
                       <div class="swiper-slide sec1_2">
                         <div id="sec1_slidertext2" class="sec1_slidertext">
-                            <h1>남극 빙하 붕괴, 먼 미래가 아닌 현실</h1><br>
-                            <p>얼마 전 남극 빙하의 ‘돌이킬수 없는 붕괴(irreversible collapse)’ 가 
+                            <div class="sec1_textbox">
+                                <h1>남극 빙하 붕괴, 먼 미래가 아닌 현실</h1><br>
+                                <p>얼마 전 남극 빙하의 ‘돌이킬수 없는 붕괴(irreversible collapse)’ 가 
                                 전 세계 언론의 헤드라인을 장식했습니다. 
                                 또한, 언론은 앞다투어 급격한 해수면 상승도 예견하고 있습니다. 
-                                우리는 이러한 상황을 어떻게 이해해야 할까요?</p><br><br>
-                            <button><a href="https://www.greenpeace.org/korea/update/6033/blog-ocean-antarctic-glacier-melt-is-already-happening/">MORE VIEW</a></button>
+                                우리는 이러한 상황을 어떻게 이해해야 할까요?<br><br>
+                                우리 인간의 기준으로 볼 때, 해수면은 서서히 상승할 것으로 보이지만 
+                                해안선과 우리의 생활방식은 이미 변하고 있습니다. 
+                                지구상에 있는 도시 가운데 3/4은 해안가에 위치하고 있고, 
+                                세계 인구의 절반이 그 곳에 살고 있습니다.
+                                </p><br><br>
+                                <button><a href="https://www.greenpeace.org/korea/update/6033/blog-ocean-antarctic-glacier-melt-is-already-happening/">MORE VIEW</a></button>
+                            </div>
                         </div>
-                        <img src="img/greenpeace11.jpg"/>
+                        <div class="sec1_imgbox">
+                            <img src="img/greenpeace11.jpg"/>
+                        </div>
                       </div>
                       <div class="swiper-slide sec1_2">
-                        <img src="img/greenpeace9.jpg"/>
+                        <div class="sec1_imgbox">
+                            <img src="img/greenpeace9.jpg"/>
+                        </div>
                         <div id="sec1_slidertext3" class="sec1_slidertext">
-                            <h1>광고 전문가가 전하는 기후위기 메시지 <br>‘나는 북극곰입니다’</h1><br>
-                            <p>그린피스의 캠페인을 알리는 영상에 수많은 이들의 아이디어와 노력, 정성이 필요합니다. 
+                            <div class="sec1_textbox">
+                                <h1>광고 전문가가 전하는 기후위기 메시지 <br>‘나는 북극곰입니다’</h1><br>
+                                <p>그린피스의 캠페인을 알리는 영상에 수많은 이들의 아이디어와 노력, 정성이 필요합니다. 
                                 이번 ‘나는 북극곰입니다’ 비디오 프로젝트 역시 마찬가지인데요. 
                                 오랜 시간 그린피스와 함께 하며, 영상을 통해 더 많은 이들에게 마음을 움직이는 
                                 환경 메시지를 전하고 있는 글로벌 광고회사 TBWA의 
                                 유병욱 크리에이티브 디렉터를 만났습니다. 
                                 시민들의 눈과 귀, 더 나아가 마음을 사로잡는 환경보호 메시지들은 어떻게 탄생했을까요?</p><br><br>
-                            <button><a href="https://www.greenpeace.org/korea/update/26170/blog-etc-polar_bear_project_interview2/"></a>MORE VIEW</button>
+                                <button><a href="https://www.greenpeace.org/korea/update/26170/blog-etc-polar_bear_project_interview2/"></a>MORE VIEW</button>
+                            </div>
                         </div>
                       </div>
                       <div class="swiper-slide sec1_2">
                         <div id="sec1_slidertext4" class="sec1_slidertext">
-                            <h1>“사라지는 벌 위해 학교에 꽃밭 만들자” <br>그린피스, 허니비 스쿨 프로젝트 크라우드 펀딩 시작</h1><br>
-                            <span>전국 98개 유치원과 초·중·고등학교에<br> 밀원 꽃밭 조성하는 ‘허니비 스쿨 프로젝트’</span><br><br>
-                            <p>국제환경단체 그린피스가 18일부터 전국 유치원과 초·중·고등학교에 
+                            <div class="sec1_textbox">
+                                <h1>“사라지는 벌 위해 학교에 꽃밭 만들자” <br>그린피스, 허니비 스쿨 프로젝트 크라우드 펀딩 시작</h1><br>
+                                <span>전국 98개 유치원과 초·중·고등학교에<br> 밀원 꽃밭 조성하는 ‘허니비 스쿨 프로젝트’</span><br><br>
+                                <p>국제환경단체 그린피스가 18일부터 전국 유치원과 초·중·고등학교에 
                                 벌과 기타 수분 매개곤충의 먹이가 되는 밀원 꽃을 심는 
                                 ‘허니비 스쿨 프로젝트’ 크라우드 펀딩을 시작한다.</p><br><br>
-                            <button><a href="https://www.greenpeace.org/korea/press/28513/honeybee_school/">MORE VIEW</a></button>
+                                <button><a href="https://www.greenpeace.org/korea/press/28513/honeybee_school/">MORE VIEW</a></button>
+                            </div>
                         </div>
-                        <img src="img/greenpeace13.jpg"/>
+                        <div class="sec1_imgbox">
+                            <img src="img/greenpeace13.jpg"/>
+                        </div>
                       </div>
                     </div>
                     <div class="swiper-button-next sec1_btn"></div>
@@ -120,8 +160,10 @@
                     <div id="sec3_box3">
                         <div id="sec_box3_1" class="sec_box3_1">
                             <div class="sec_box3_text">
-                                <p><span>기후</span> 최신소식</p>
-                                <h1>개인 제트기는 이제 그만!<br>암스테르담 스키폴 공항의 놀라운 결정</h1>
+                                <div class="sec_box3_text_box">
+                                    <p><span>기후</span> 최신소식</p>
+                                    <h1>개인 제트기는 이제 그만!<br>암스테르담 스키폴 공항의 놀라운 결정</h1>
+                                </div>
                             </div>
                             <div class="sec_box3_img">
                                 <img src="img/greenpeace15.jpg">
@@ -129,8 +171,10 @@
                         </div>
                         <div id="sec_box3_2" class="sec_box3_1">
                             <div class="sec_box3_text">
-                                <p><span>기후</span> 보도자료</p>
-                                <h1>개HD현대건설기계, “아마존 불법 금 채굴에 동원되는 중장비 판매 중단” 결정</h1>
+                                <div class="sec_box3_text_box">
+                                    <p><span>기후</span> 보도자료</p>
+                                    <h1>개HD현대건설기계, “아마존 불법 금 채굴에 동원되는 중장비 판매 중단” 결정</h1>
+                                </div>
                             </div>
                             <div class="sec_box3_img">
                                 <img src="img/greenpeace16.jpg">
@@ -138,8 +182,10 @@
                         </div>
                         <div id="sec_box3_3" class="sec_box3_1">
                             <div class="sec_box3_text">
-                                <p><span>해양</span> 최신소식</p>
-                                <h1>UN 글로벌 해양조약, 드디어 해냈습니다! <br>글로벌 해양조약 성사!</h1>
+                                <div class="sec_box3_text_box">
+                                    <p><span>해양</span> 최신소식</p>
+                                    <h1>UN 글로벌 해양조약, 드디어 해냈습니다! <br>글로벌 해양조약 성사!</h1>
+                                </div>
                             </div>
                             <div class="sec_box3_img">
                                 <img src="img/greenpeace17.jpg">
@@ -154,32 +200,32 @@
                 <div id="sec2_list">
                     <div class="sec2_list_img img1">
                         <a href=""><img src="img/greenpeace4.jpg">
-                        <p>해양</p>
+                        <!-- <p>해양</p> -->
                         <span>OCEANS</span></a>
                     </div>
                     <div class="sec2_list_img img2">
                         <a href=""><img src="img/greenpeace5.jpg">
-                        <p>생활</p>
+                        <!-- <p>생활</p> -->
                         <span>HEALTH</span></a>
                     </div>
                     <div class="sec2_list_img img3">
                         <a href=""><img src="img/greenpeace6.jpg">
-                        <p>기후</p>
+                        <!-- <p>기후</p> -->
                         <span>CLINATE</span></a>
                     </div>
                     <div class="sec2_list_img img4">
                         <a href=""><img src="img/greenpeace7.jpg">
-                        <p>산림</p>
+                        <!-- <p>산림</p> -->
                         <span>FOREST</span></a>
                     </div>
                     <div class="sec2_list_img img5">
                         <a href=""><img src="img/greenpeace8.jpg">
-                        <p class="plastic">플라스틱</p>
+                        <!-- <p class="plastic">플라스틱</p> -->
                         <span>PLASTICS</span></a>
                     </div>
                     <div class="sec2_list_img img6">
                         <a href=""><img src="img/greenpeace12.jpg">
-                        <p>북극</p>
+                        <!-- <p>북극</p> -->
                         <span>ARCTIC</span></a>
                     </div>
                 </div>
@@ -311,6 +357,19 @@
                 </div>
             </div>
         </footer>
+        <div class="nav_on">
+            <i class="fa-solid fa-x xx" style="color: #66cc00;"></i>
+            <div class="nav_list2">
+                <ul>
+                    <li><a href="">Active</a></li>
+                    <li><a href="">Notice</a></li>
+                    <li><a href="">Participate</a></li>
+                    <li><a href="">Information</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Introduce</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -321,10 +380,10 @@
       spaceBetween: 30,
       effect: "fade",
       loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
+    //   autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    //   },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
