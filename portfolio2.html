@@ -9,6 +9,8 @@
     <!--aos-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/183b694fdd.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="portfolio2.css">
@@ -18,6 +20,25 @@
           if(scrollTop != 0) $('header').addClass('nav_scroll');
           else $('header').removeClass('nav_scroll');
       });
+
+      $(function(){
+            $('.skill_arrow1').click(function(){
+                $('.skill').fadeIn(500),
+                $('.education').css('display', 'none')
+                $('.experience').css('display', 'none')
+                $('.license').css('display', 'none')
+                $('.xx').css('display', 'block')
+            })
+
+            $('.skill_arrow2').click(function(){
+                $('.education').fadeIn(500),
+                $('.experience').fadeIn(500),
+                $('.license').fadeIn(500),
+                $('.skill_arrow2').css('display', 'none')
+                $('.skill_arrow1').css('display', 'block')
+                $('.skill').css('display', 'none')
+            })
+          })
     </script>
 </head>
 <body>
@@ -27,7 +48,7 @@
                 <ul>
                     <li><a href="#section2">ABOUT</a></li>
                     <li><a href="#section3">PROJECT</a></li>
-                    <li><a href="##section4">CONTACT</a></li>
+                    <li><a href="#section4">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
@@ -37,20 +58,161 @@
                     <div id="sec1_box1">
                         <span class="line"></span>
                         <p>WEB PUBLISHER</p>
-                        <h1>Portfolio</h1><br>
-                        <a href="#section2"><span class="name">Park YoonHee</span></a>
+                        <h1>Portfolio</h1>
+                        <a href="#section2"><span class="name">#Park Yoon Hee</span></a>
                     </div>
                     <div id="sec1_box2">
                         <h1>2023</h1>
                     </div>
                 </div>
             </section>
-            <section id="section2"></section>
+            <section id="section2">
+                <div id="sec2_container">
+                    <div class="left2">
+                        <div class="top2">
+                            <span></span>
+                            <p class="myproflie">About ME</p>
+                        </div>
+                        <p><em>도전을 두려워하지 않는</em><br>신입 웹 퍼블리셔 <em>박윤희</em>입니다.</p>
+                        <div class="left_mide2">
+                            <img src="img/박윤희_프로필사진2.jpg" alt="박윤희">
+                            <!-- <img src="http://placekitten.com/300/300" alt=""> -->
+                            <ul>
+                                <li><span></span><b>NAME</b>
+                                    <ul class="name">
+                                        <li>박윤희</li>
+                                    </ul>
+                                </li>
+                                <li><span></span><b>BIRTH</b>
+                                    <ul class="name">
+                                        <li>1996.12.24</li>
+                                    </ul>
+                                </li>
+                                <li><span></span><b class="about_tel">PHONE</b>
+                                    <ul class="name">
+                                        <li>010-9023-8451</li>
+                                    </ul>
+                                </li>
+                                <li><span></span><b>EMAIL</b>
+                                    <ul class="name">
+                                        <li>yhe24@naver.com</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="personality">
+                                        <li>#긍정적</li>
+                                        <li>#적응력</li>
+                                        <li>#꼼꼼함</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="right2">
+                        <div class="education">
+                            <div class="top2">
+                                <span></span>
+                                <p>Education</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>2023.11</p>
+                                    <p>UI/UX 웹퍼블리셔 양성과정 수료</p>
+                                </li>
+                                <li>
+                                    <p>2017.10</p>
+                                    <p>항공 예약&발권 / 체크인 카운터 교육 이수</p>
+                                </li>
+                                <li>
+                                    <p>2017.02</p>
+                                    <p>명지전문대학교 일본어학과 졸업</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="experience">
+                            <div class="top2">
+                                <span></span>
+                                <p>Career</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>2022.11</p>
+                                    <p>인천국제공항보안(주) 보안검색 근무</p>
+                                </li>
+                                <li>
+                                    <p>2016.11</p>
+                                    <p>서브웨이 주엽점 파트타임</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="license">
+                            <div class="mide2">
+                                <span></span>
+                                <p>License</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>2023.12</p>
+                                    <p>웹 디자인 기능사 자격증(예정)</p>
+                                </li>
+                                <li>
+                                    <p>2017.05</p>
+                                    <p>CRS 항공 예약 & 발권 자격증</p>
+                                </li>
+                                <li>
+                                    <p>2017.05</p>
+                                    <p>항공 체크인 카운터 DCS실무</p>
+                                    <i class="fa-solid fa-arrow-right skill_arrow1"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="skill">
+                            <div class="mide2">
+                                <span></span>
+                                <p>Skills</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <img src="img/skill1.png" alt="">
+                                    <p>HTML5 웹 접근성에 올바르며 모든 사람들이 편하게 이용할 수 있는 구조를 구성할 수 있습니다</p>
+                                </li>
+                                <li>
+                                    <img src="img/skill2.png" alt="">
+                                    <p>다양한 디자인과 애니메이션을 구성하여 Javascript와 연동할 수 있는 디자인을 제작할 수 있습니다</p>
+                                </li>
+                                <li>
+                                    <!--<img src="img/skill3.png" alt="">-->
+                                    <img src="img/skill4.png" alt="">
+                                    <p>슬라이드 메뉴, 스크롤 애니메이션 등 다양한 동적 기능을 자바스크립트와 제이워리로 구현 가능합니다.</p>
+                                </li>
+                                <!--<li>
+                                    <img src="img/skill4.png" alt="">
+                                </li>-->
+                                <li>
+                                    <img src="img/skill5.png" alt="">
+                                    <p>이미지 색,밝기 보정 및 편집 가능합니다</p>
+                                </li>
+                                <li>
+                                    <img src="img/skill6.png" alt="">
+                                    <p>웹사이트에 들어갈 아이콘, 벡터이미지 제작 수정 가능합니다.</p>
+                                </li>
+                                <li>
+                                    <img src="img/skill7.png" alt="">
+                                    <p>Figma를 활용한 와이어프레임, 프로토타입과 figzam을 활용한 아이디어 기획구조 등을 활용하여 웹디자인을 기획, 제작할 수 있습니다.</p>
+                                </li>
+                                <li>
+                                    <img src="img/skill8.png" alt="">
+                                    <p>Git 명령어를 활용한 GitHub 프로젝트 관리를 할 수 있습니다.<i class="fa-solid fa-arrow-right skill_arrow2"></i></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="#section1"><i class="fa-solid fa-circle-up scroll_up"></i></a>
+            </section>
             <section id="section3">
-                <div class="section_name" data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-duration="1500"
-                data-aos-offset="0">
+                <div class="section_name">
                     <h1>PROJECT</h1>
                 </div>
                 <div class="project_box1">
@@ -91,8 +253,29 @@
                         </div>
                     </div>
                 </div>
+                <a href="#section1"><i class="fa-solid fa-circle-up scroll_up"></i></a>
             </section>
-            <section id="section4"></section>
+            <section id="section4">
+                <div id="sec4_box1">
+                    <div id="sec4_box1_text">
+                        <h1>Thank you for watching my portfolio.</h1>
+                    </div>
+                </div>
+                <div id="sec4_box2" data-aos="fade-right" data-aos-duration="2500">
+                    <div></div>
+                </div>
+                <div id="sec4_box3">
+                    <div id="sec4_box3_text1">
+                        <p>PARK YOON HEE</p>
+                        <p>2023 PORTFOLIO</p>
+                    </div>
+                    <div id="sec4_box3_text2">
+                        <p class="contact_tel">010-9023-8451</p>
+                        <p>yhe24@naver.com</p>
+                    </div>
+                </div>
+                <a href="#section1"><i class="fa-solid fa-circle-up scroll_up"></i></a>
+            </section>
         </main>
         <footer></footer>
     </div>
